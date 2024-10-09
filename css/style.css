@@ -1,0 +1,43 @@
+div{
+    position: absolute;
+    border: 1px solid #41729c;
+}
+div.bloque1{
+    background-color: #03e669;
+    width: 353px;
+    height: 113px;
+    top: 100px;
+    left: 56px;
+    z-index: 800;
+}
+
+/* 
+
+Description:
+This CSS rule targets a <div> element with the class "bloque2" and applies various styling properties to it.
+
+Properties:
+- background-color: Sets the background color of the element to a shade of red (#b41717).
+- width: Defines the width of the element as 297 pixels.
+- height: Defines the height of the element as 387 pixels.
+- top: Positions the element 100 pixels from the top of its containing element (requires position property to be set).
+- left: Positions the element 81 pixels from the left of its containing element (requires position property to be set).
+- z-index: Sets the stack order of the element to 40, which affects its layering relative to other elements.
+*/
+div.bloque2{
+    background-color: #b41717;
+    width: 297px;
+    height: 387px;
+    top: 100px;
+    left: 81px;
+    z-index: 40;
+}   
+
+div.bloque3{
+    background-color: #a714bb;
+    width: 397px;
+    height: 116px;
+    top: 374px;
+    left: 20px;
+    z-index: 20;
+}   
