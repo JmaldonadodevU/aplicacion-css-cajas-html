@@ -1,43 +1,101 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
 div{
     position: absolute;
     border: 1px solid #41729c;
 }
 div.bloque1{
-    background-color: #03e669;
-    width: 353px;
-    height: 113px;
-    top: 100px;
-    left: 56px;
-    z-index: 800;
+    background-color: rgb(144, 202, 202);/* Color de fondo bloque 1 */
+    width: 353px;/* Ancho del bloque 1 */
+    height: 113px;/* Alto del bloque 1 */
+    top: 100px;/* Distancia desde la partde superior de la ventana*/
+    left: 56px;/* Distancia desde el lado izquierdo de la ventana*/
+    z-index: 800;/* Apila el bloque 1 sobre otros elementos (nivel de apelacion) */
 }
 
-/* 
-
-Description:
-This CSS rule targets a <div> element with the class "bloque2" and applies various styling properties to it.
-
-Properties:
-- background-color: Sets the background color of the element to a shade of red (#b41717).
-- width: Defines the width of the element as 297 pixels.
-- height: Defines the height of the element as 387 pixels.
-- top: Positions the element 100 pixels from the top of its containing element (requires position property to be set).
-- left: Positions the element 81 pixels from the left of its containing element (requires position property to be set).
-- z-index: Sets the stack order of the element to 40, which affects its layering relative to other elements.
-*/
 div.bloque2{
-    background-color: #b41717;
-    width: 297px;
-    height: 387px;
-    top: 100px;
-    left: 81px;
-    z-index: 40;
+    background-color: #b41717;/* Color de fondo bloque 2 */
+    width: 297px;/* Ancho del bloque 2 */
+    height: 387px;/* Distancia desde la partde superior de la ventana*/
+    top: 100px;/* Distancia desde el lado izquierdo de la ventana*/
+    left: 81px;/* Distancia desde el lado izquierdo de la ventana*/
+    z-index: 40;/* Apila el bloque 2 sobre otros elementos (nivel de apelacion) */
 }   
 
 div.bloque3{
-    background-color: #a714bb;
-    width: 397px;
-    height: 116px;
-    top: 374px;
-    left: 20px;
-    z-index: 20;
+    background-color: #a714bb;/* Color de fondo bloque 3 */
+    width: 397px;/* Ancho del bloque 3 */
+    height: 116px;/* Distancia desde la partde superior de la ventana*/
+    top: 374px;/* Distancia desde el lado izquierdo de la ventana*/
+    left: 20px;/* Distancia desde el lado izquierdo de la ventana*/
+    z-index: 20;/* Apila el bloque 3 sobre otros elementos (nivel de apelacion) */
 }   
+div.bloque2 div.hijo1{
+    background-color: #058f00;/* Color de fondo hijo 1 */
+    width: 266px;/* Ancho del hijo 1 */
+    height: 98px;/* Alto del hijo 1 */
+    top: 120px;/* Distancia desde la partde superior de la ventana*/
+    left: 15px;/* Distancia desde el lado izquierdo de la ventana*/
+    z-index: 90;/* Apila el hijo 1 sobre otros elementos dentro del bloque 2 (nivel de apelacion) */
+}
+
+div.bloque2 div.hijo2{
+    background-color: #ff02f2;/* Color de fondo hijo 2 */
+    width: 143px;/* Ancho del hijo 2 */
+    height: 296px;/* Alto del hijo 2 */
+    top: 33px;/* Distancia desde la partde superior de la ventana*/
+    left: 126px;/* Distancia desde el lado izquierdo de la ventana*/
+    z-index: 100;/* Apila el hijo 2 sobre otros elementos dentro del bloque 2 (nivel de apelacion) */
+}
+div.bloque3 div.hijo3{
+    background-color: #ffc402;/* Color de fondo hijo 3 */
+    width: 176px;/* Ancho del hijo 3 */
+    height: 99px;/* Alto del hijo 3 */
+    top: 278px;/* Distancia desde la partde superior de la ventana*/
+    left: 105px;/* Distancia desde el lado izquierdo de la ventana*/
+    z-index: 10;/* Apila el hijo 3 sobre otros elementos dentro del bloque 3 (nivel de apelacion) */
+}
+
+p{
+    background-color: #83a4ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+a{
+    color: #202ffd;/* Color del texto */
+    text-decoration: none;/* Quita el subrayado del texto */
+}
+a:hover{
+    color: #ff0000;/* Color del texto */
+    text-decoration: underline;/* Subraya el texto */
+}
+
+b{
+    color: #ff0000;/* Color del texto */
+}
+
+.prueba{
+    color: #a200ff;/* Color del texto */
+    font-style: italic;/* Estilo de la fuente */
+}
+
+#prueba2{
+    color: #fbff00;/* Color del texto */
+    font-weight: bold;/* Estilo de la fuente */
+}
+
+.h3{
+    color: #ff00f7;/* Color del texto */
+    font-size: 1.2em;/* Tamaño de la fuente */
+}
